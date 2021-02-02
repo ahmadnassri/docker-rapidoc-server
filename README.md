@@ -21,11 +21,9 @@ a [RapiDoc](https://github.com/mrin9/RapiDoc) server that watches for changes in
 
 ###### quick start
 
-  - mount the folder containing your spec file(s) to `/spec`
-  - define an environment variable `spec-url` to point to your spec file
-  - for local files `spec-url` must start with `/spec/`
-
-<!-- end list -->
+-   mount the folder containing your spec file(s) to `/spec`
+-   define an environment variable `spec-url` to point to your spec file
+-   for local files `spec-url` must start with `/spec/`
 
 ``` bash
 $ docker run -it -p 8080:8080 -v $(pwd)/spec:/spec -e "spec-url=/spec/path/to/petstore.json" rapidoc-server
