@@ -1,5 +1,5 @@
 # ---- base image ----
-FROM ahmadnassri/serve-reload-replace:1.1.4
+FROM ahmadnassri/serve-reload-replace:1.1.5
 
 WORKDIR /www
 
