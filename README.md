@@ -13,9 +13,9 @@ a RapiDoc server with live monitoring and reload
 
 ## Features
 
-a [RapiDoc](https://github.com/mrin9/RapiDoc) server that watches for changes in your spec file and automatically reloads connected browser sessions with ever spec file change.
+a [RapiDoc][] server that watches for changes in your spec file and automatically reloads connected browser sessions with ever spec file change.
 
-> ***Note**: uses [`serve-reload-replace`](https://github.com/ahmadnassri/node-serve-reload-replace) under the hood to run the HTTP server, and monitor changes*
+> ***Note**: uses [`serve-reload-replace`][] under the hood to run the HTTP server, and monitor changes*
 
 ## Usage
 
@@ -39,7 +39,7 @@ $ docker run -it -p 8080:8080 -e "spec-url=https://petstore.swagger.io/v2/swagge
 
 ### RapiDoc Attributes
 
-All the [RapiDoc Attributes](https://mrin9.github.io/RapiDoc/api.html) are supported through environment variables:
+All the [RapiDoc Attributes][] are supported through environment variables:
 
 ``` bash
 $ docker run -it --rm -p 8080:8080 \
@@ -69,6 +69,10 @@ services:
       spec-url: /spec/petstore.json
       theme: dark
 ```
+
+  [RapiDoc]: https://github.com/mrin9/RapiDoc
+  [`serve-reload-replace`]: https://github.com/ahmadnassri/node-serve-reload-replace
+  [RapiDoc Attributes]: https://mrin9.github.io/RapiDoc/api.html
 
 ----
 > Author: [Ahmad Nassri](https://www.ahmadnassri.com/) &bull;
