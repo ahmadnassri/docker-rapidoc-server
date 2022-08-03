@@ -133,6 +133,7 @@ jobs:
             org.opencontainers.image.version=${{ needs.release.outputs.release-version }}
             org.opencontainers.image.source=${{ github.event.repository.clone_url }}
             org.opencontainers.image.revision=${{ github.sha }}
+          platforms: linux/amd64,linux/arm64,linux/arm/v7
 
   template-sync:
     timeout-minutes: 20
