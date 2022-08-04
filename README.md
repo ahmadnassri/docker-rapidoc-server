@@ -4,9 +4,6 @@ a RapiDoc server with live monitoring and reload
 
 [![license][license-img]][license-url]
 [![release][release-img]][release-url]
-[![super linter][super-linter-img]][super-linter-url]
-[![semantic][semantic-img]][semantic-url]
-
 [![size][size-img]][size-url]
 [![docker][docker-img]][docker-url]
 [![github][github-img]][github-url]
@@ -83,12 +80,6 @@ services:
 
 [release-url]: https://github.com/ahmadnassri/docker-rapidoc-server/releases
 [release-img]: https://badgen.net/github/release/ahmadnassri/docker-rapidoc-server
-
-[super-linter-url]: https://github.com/ahmadnassri/docker-rapidoc-server/actions?query=workflow%3Asuper-linter
-[super-linter-img]: https://github.com/ahmadnassri/docker-rapidoc-server/workflows/super-linter/badge.svg
-
-[semantic-url]: https://github.com/ahmadnassri/docker-rapidoc-server/actions?query=workflow%3Arelease
-[semantic-img]: https://badgen.net/badge/📦/semantically%20released/blue
 
 [size-url]: https://hub.docker.com/r/ahmadnassri/rapidoc-server
 [size-img]: https://badgen.net/docker/size/ahmadnassri/rapidoc-server
