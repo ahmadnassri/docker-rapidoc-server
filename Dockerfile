@@ -7,3 +7,6 @@ COPY src/ /www/
 
 ENTRYPOINT [ "/app/bin.js" ]
 
+HEALTHCHECK NONE
+
+USER node

@@ -18,9 +18,9 @@ a [RapiDoc][] server that watches for changes in your spec file and automaticall
 
 ###### quick start
 
--   mount the folder containing your spec file(s) to `/spec`
--   define an environment variable `spec-url` to point to your spec file
--   for local files `spec-url` must start with `/spec/`
+- mount the folder containing your spec file(s) to `/spec`
+- define an environment variable `spec-url` to point to your spec file
+- for local files `spec-url` must start with `/spec/`
 
 ``` bash
 $ docker run -it -p 8080:8080 -v $(pwd)/spec:/spec -e "spec-url=/spec/path/to/petstore.json" rapidoc-server
@@ -61,9 +61,9 @@ services:
     ports:
       - 8080:8080
     volumes:
-      - ./spec:/spec
+      - ./my-spec.json:/www/my-spec.json
     environment:
-      spec-url: /spec/petstore.json
+      spec-url: petstore.json
       theme: dark
 ```
 
@@ -82,7 +82,7 @@ services:
 [release-img]: https://badgen.net/github/release/ahmadnassri/docker-rapidoc-server
 
 [size-url]: https://hub.docker.com/r/ahmadnassri/rapidoc-server
-[size-img]: https://badgen.net/docker/size/ahmadnassri/rapidoc-server
+[size-img]: https://badgen.net/docker/size/ahmadnassri/rapidoc-server?label=image%20size
 
 [docker-url]: https://hub.docker.com/r/ahmadnassri/rapidoc-server
 [docker-img]: https://badgen.net/badge/icon/docker%20hub?icon=docker&label

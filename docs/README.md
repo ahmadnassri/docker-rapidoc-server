@@ -51,8 +51,8 @@ services:
     ports:
       - 8080:8080
     volumes:
-      - ./spec:/spec
+      - ./my-spec.json:/www/my-spec.json
     environment:
-      spec-url: /spec/petstore.json
+      spec-url: petstore.json
       theme: dark
 ```
