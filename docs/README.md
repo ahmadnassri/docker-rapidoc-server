@@ -2,7 +2,7 @@
 
 a [RapiDoc](https://rapidocweb.com/) server that watches for changes in your spec file and automatically reloads connected browser sessions with ever spec file change.
 
-> _**Note**: uses [`serve-reload-replace`](https://github.com/ahmadnassri/node-serve-reload-replace) under the hood to run the HTTP server, and monitor changes_
+> _**Note**: uses [`serve-reload-replace`](https://github.com/ahmadnassri/node-serve-reload-replace) under the hood to run the HTTP server, and **monitor** changes_
 
 ## Usage
 

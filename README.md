@@ -12,7 +12,7 @@ a RapiDoc server with live monitoring and reload
 
 a [RapiDoc][] server that watches for changes in your spec file and automatically reloads connected browser sessions with ever spec file change.
 
-> ***Note**: uses [`serve-reload-replace`][] under the hood to run the HTTP server, and monitor changes*
+> ***Note**: uses [`serve-reload-replace`][] under the hood to run the HTTP server, and **monitor** changes*
 
 ## Usage
 
