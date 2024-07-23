@@ -18,12 +18,13 @@ a [RapiDoc][] server that watches for changes in your spec file and automaticall
 
 ###### quick start
 
-- mount the folder containing your spec file(s) to `/spec`
-- define an environment variable `spec-url` to point to your spec file
-- for local files `spec-url` must start with `/spec/`
+- define an environment variable `spec-url` to point to your spec file *(http url or local path)*
+- if a local path: mount your specs file(s) to `/www/`, set `spec-url` path starts with `/`
+
+###### useage with local path
 
 ``` bash
-$ docker run -it -p 8080:8080 -v $(pwd)/spec:/spec -e "spec-url=/spec/path/to/petstore.json" rapidoc-server
+$ docker run -it -p 8080:8080 -v /path/to/petstore.yaml:/www/petstore.yaml -e "spec-url=/spec/petstore.json" rapidoc-server
 ```
 
 ###### usage with urls
@@ -32,6 +33,22 @@ While you can use a full url to a spec file, it will not watch for changes / aut
 
 ``` bash
 $ docker run -it -p 8080:8080 -e "spec-url=https://petstore.swagger.io/v2/swagger.json" rapidoc-server
+```
+
+###### usage with Docker Compose
+
+``` yaml
+version: 3.8
+services:
+  docs:
+    build: .
+    ports:
+      - 8080:8080
+    volumes:
+      - ./my-spec.json:/www/my-spec.json
+    environment:
+      spec-url: /petstore.json
+      theme: dark
 ```
 
 ### RapiDoc Attributes
@@ -49,22 +66,6 @@ $ docker run -it --rm -p 8080:8080 \
   -e "theme=dark" \
   -e "render-style=read" \
   rapidoc-server
-```
-
-## Docker Compose
-
-``` yaml
-version: 3.8
-services:
-  docs:
-    build: .
-    ports:
-      - 8080:8080
-    volumes:
-      - ./my-spec.json:/www/my-spec.json
-    environment:
-      spec-url: petstore.json
-      theme: dark
 ```
 
   [RapiDoc]: https://rapidocweb.com/
