@@ -1,6 +1,6 @@
 ## Features
 
-a [RapiDoc](https://github.com/mrin9/RapiDoc) server that watches for changes in your spec file and automatically reloads connected browser sessions with ever spec file change.
+a [RapiDoc](https://rapidocweb.com/) server that watches for changes in your spec file and automatically reloads connected browser sessions with ever spec file change.
 
 > _**Note**: uses [`serve-reload-replace`](https://github.com/ahmadnassri/node-serve-reload-replace) under the hood to run the HTTP server, and monitor changes_
 
@@ -26,7 +26,7 @@ $ docker run -it -p 8080:8080 -e "spec-url=https://petstore.swagger.io/v2/swagge
 
 ### RapiDoc Attributes
 
-All the [RapiDoc Attributes](https://mrin9.github.io/RapiDoc/api.html) are supported through environment variables:
+All the [RapiDoc Attributes](https://rapidocweb.com/api.html) are supported through environment variables:
 
 ```bash
 $ docker run -it --rm -p 8080:8080 \

@@ -67,9 +67,9 @@ services:
       theme: dark
 ```
 
-  [RapiDoc]: https://github.com/mrin9/RapiDoc
+  [RapiDoc]: https://rapidocweb.com/
   [`serve-reload-replace`]: https://github.com/ahmadnassri/node-serve-reload-replace
-  [RapiDoc Attributes]: https://mrin9.github.io/RapiDoc/api.html
+  [RapiDoc Attributes]: https://rapidocweb.com/api.html
 
 ----
 > Author: [Ahmad Nassri](https://www.ahmadnassri.com/) &bull;
